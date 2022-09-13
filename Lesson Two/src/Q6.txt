@@ -1,0 +1,5 @@
+Q6. The answer is no, length of an array can not be changed once declared
+	nor can we insert or delete from it. And this is because when creating 
+	an array we will give it a length of premitive defined data type and that 
+	length will occupy a set of memory on the RAM and store it there, so we 
+	can not change the memory allocation of each data types.

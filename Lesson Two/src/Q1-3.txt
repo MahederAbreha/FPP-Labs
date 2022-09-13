@@ -1,0 +1,45 @@
+
+Q1. // when writing the method it is not allowed to specify the
+	array length in parameter.
+	//right way is
+	public public int searchAccount( int[] number ) {
+	
+	//here it did not tell us the data type of the array
+	//right way is
+	int[] number = new int[15]; 
+	for(int i=0; i<number.length; i++){
+	
+	//we can not start our operation with non existant number 
+	the array index always starts with 0 and there is no element before it
+	//right way is
+	number[i] = number[i-1] + number[i+1];
+	return number;
+	}
+	
+Q2. public static void main(String[] args) {
+        Student[] student = new Student[2];
+        student[0] = new Student();
+        student[0].name = "Khan";
+        student[0] = new Student();
+        student[0].name = "Kittu";
+        student[1] = new Student();
+        student[1].name = "Munna";
+        for (Student element : student) {
+            System.out.print(element.name + " ~ ");
+       	 }
+    	}
+    }
+	class Student {
+    	String name;
+	}
+	//the out put will not be printing out anything because Student can not be 
+	accessed from a static class.
+	
+
+Q3. a. //the out put will be 0
+	
+	b. //the out put will be error
+	
+	c. //the out put will be error 
+	
+	
